@@ -44,7 +44,16 @@ cv2.destroyAllWindows
 # ii)Convert HSV to RGB and BGR
 
 
-
+import cv2
+image=cv2.imread('1.jpg')
+hsv_img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+cv2.imshow('BGR2HSV',hsv_img)
+hsv1_img = cv2.cvtColor(hsv_img, cv2.COLOR_HSV2RGB)
+cv2.imshow('HSV2RGB',hsv1_img)
+hsv2_img = cv2.cvtColor(image, cv2.COLOR_HSV2BGR)
+cv2.imshow('RGB2GRAY',hsv2_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows
 
 
 # iii)Convert RGB and BGR to YCrCb
