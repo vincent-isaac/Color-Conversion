@@ -22,8 +22,8 @@ Anaconda - Python 3.7
 
 ## Program:
 ```python
-# Developed By:
-# Register Number:
+# Developed By:J Vincent isaac jeyaraj
+# Register Number:212220230060
 # i) Convert BGR and RGB to HSV and GRAY
 
 import cv2
@@ -43,7 +43,6 @@ cv2.destroyAllWindows
 
 # ii)Convert HSV to RGB and BGR
 
-
 import cv2
 image=cv2.imread('1.jpg')
 hsv_img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -57,6 +56,7 @@ cv2.destroyAllWindows
 
 
 # iii)Convert RGB and BGR to YCrCb
+
 RGB_YCrCb=cv2.cvtColor(image,cv2.COLOR_RGB2YCrCb)
 cv2.imshow("RGB_YCrCb_IMAGE",RGB_YCrCb)
 BGR_YCrCb=cv2.cvtColor(image,cv2.COLOR_BGR2YCrCb)
@@ -66,6 +66,7 @@ cv2.waitKey(0)
 
 
 # iv)Split and Merge RGB Image
+
 blue = image[:,:,0]
 cv2.imshow("blue",blue)
 green = image[:,:,1]
@@ -79,6 +80,7 @@ cv2.waitKey(0)
 
 
 # v) Split and merge HSV Image
+
 hsv=cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
 cv2.imshow("ORIGINAL HSV_IMAGE",hsv)
 h, s, v = cv2.split(hsv)
@@ -95,32 +97,27 @@ cv2.waitKey(0)
 ## Output:
 ### i) BGR and RGB to HSV and GRAY
 <br>
-![1](https://user-images.githubusercontent.com/75234588/162610901-47637c49-18fc-4a7a-8c69-2a5c72e01bf8.png)
-
+![1](https://user-images.githubusercontent.com/75234588/162611385-6c8bc150-5206-407c-9c5b-bc7d0e41c5c1.png)
 <br>
 
 ### ii) HSV to RGB and BGR
 <br>
 ![2](https://user-images.githubusercontent.com/75234588/162610905-a41caf0b-48bb-4094-9e27-b0c7e7f61bf1.png)
-
 <br>
 
 ### iii) RGB and BGR to YCrCb
 <br>
 ![3](https://user-images.githubusercontent.com/75234588/162610909-81e5e2a3-c932-4c41-b08c-5305831b8f3a.png)
-
 <br>
 
 ### iv) Split and merge RGB Image
 <br>
 ![4](https://user-images.githubusercontent.com/75234588/162610914-59c29fe1-4661-4136-8441-ec55ccee7fef.png)
-
 <br>
 
 ### v) Split and merge HSV Image
 <br>
 ![5](https://user-images.githubusercontent.com/75234588/162610920-b92833e4-1295-4d05-880c-8577dd4a4bf7.png)
-
 <br>
 
 
