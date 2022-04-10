@@ -121,23 +121,19 @@ cv2.waitKey(0)
 <br>
 
 ### ii) HSV to RGB and BGR
-<br>
-![2](https://user-images.githubusercontent.com/75234588/162610905-a41caf0b-48bb-4094-9e27-b0c7e7f61bf1.png)
+<br>![2](https://user-images.githubusercontent.com/75234588/162613562-5eb09736-917d-40d9-8849-9658f27b24d6.png)
 <br>
 
 ### iii) RGB and BGR to YCrCb
-<br>
-![3](https://user-images.githubusercontent.com/75234588/162610909-81e5e2a3-c932-4c41-b08c-5305831b8f3a.png)
+<br>![3](https://user-images.githubusercontent.com/75234588/162613570-9869ebdf-efd7-4191-a3f2-29c9b424d324.png)
 <br>
 
 ### iv) Split and merge RGB Image
-<br>
-![4](https://user-images.githubusercontent.com/75234588/162610914-59c29fe1-4661-4136-8441-ec55ccee7fef.png)
+<br>![4](https://user-images.githubusercontent.com/75234588/162613584-8551165d-1e45-49d8-89e4-a19c25ce0f9b.png)
 <br>
 
 ### v) Split and merge HSV Image
-<br>
-![5](https://user-images.githubusercontent.com/75234588/162613418-1388f2ed-da89-452d-aabd-ab12363dc7eb.png)
+<br>![5](https://user-images.githubusercontent.com/75234588/162613591-47074d04-630b-4d91-9b9f-b041d2b95b86.png)
 <br>
 
 
