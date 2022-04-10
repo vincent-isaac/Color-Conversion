@@ -6,23 +6,38 @@ To perform the color conversion between RGB, BGR, HSV, and YCbCr color models.
 Anaconda - Python 3.7
 ## Algorithm:
 ### Step1:
-Read an image using imread() and Convert BGR and RGB to HSV and GRAY using: cv2.cvtColor(image,cv2.COLOR_RGB2HSV) cv2.cvtColor(image,cv2.COLOR_RGB2GRAY) cv2.cvtColor(image,cv2.COLOR_BGR2HSV) cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+Read an image using imread() and Convert BGR and RGB to HSV and GRAY using:<br>
+cv2.cvtColor(image,cv2.COLOR_RGB2HSV) <br>
+cv2.cvtColor(image,cv2.COLOR_RGB2GRAY) <br>
+cv2.cvtColor(image,cv2.COLOR_BGR2HSV) <br>
+cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 <br>
 
 ### Step2:
-Convert HSV to RGB and BGR using: cv2.cvtColor(image,cv2.COLOR_HSV2RGB) cv2.cvtColor(image,cv2.COLOR_HSV2BGR)
+Convert HSV to RGB and BGR using: <br>
+cv2.cvtColor(image,cv2.COLOR_HSV2RGB) <br>
+cv2.cvtColor(image,cv2.COLOR_HSV2BGR)
 <br>
 
 ### Step3:
-Convert RGB and BGR to YCrCb using: cv2.cvtColor(image,cv2.COLOR_RGB2YCrCb) cv2.cvtColor(image,cv2.COLOR_BGR2YCrCb)
+Convert RGB and BGR to YCrCb using: <br>
+cv2.cvtColor(image,cv2.COLOR_RGB2YCrCb) <br>
+cv2.cvtColor(image,cv2.COLOR_BGR2YCrCb)
 <br>
 
 ### Step4:
-Split and Merge RGB Image using: blue = image[:,:,0] green = image[:,:,1] red = image[:,:,2] cv2.merge((blue,green,red))
+Split and Merge RGB Image using: <br>
+blue = image[:,:,0] <br>
+green = image[:,:,1] <br>
+red = image[:,:,2] <br>
+cv2.merge((blue,green,red))
 <br>
 
 ### Step5:
- Split and merge HSV Image using: hsv=cv2.cvtColor(image,cv2.COLOR_BGR2HSV) h, s, v = cv2.split(hsv) cv2.merge((h,s,v))
+ Split and merge HSV Image using: <br>
+ hsv=cv2.cvtColor(image,cv2.COLOR_BGR2HSV) <br>
+ h, s, v = cv2.split(hsv) <br>
+ cv2.merge((h,s,v))
 <br>
 
 ## Program:
@@ -101,8 +116,8 @@ cv2.waitKey(0)
 ```
 ## Output:
 ### i) BGR and RGB to HSV and GRAY
-<br>
-![1](https://user-images.githubusercontent.com/75234588/162611385-6c8bc150-5206-407c-9c5b-bc7d0e41c5c1.png)
+<br>|
+![1](https://user-images.githubusercontent.com/75234588/162613522-7a6e2bfb-8708-4f0f-8243-5209ef6aaed2.png)
 <br>
 
 ### ii) HSV to RGB and BGR
@@ -122,7 +137,7 @@ cv2.waitKey(0)
 
 ### v) Split and merge HSV Image
 <br>
-![5](https://user-images.githubusercontent.com/75234588/162610920-b92833e4-1295-4d05-880c-8577dd4a4bf7.png)
+![5](https://user-images.githubusercontent.com/75234588/162613418-1388f2ed-da89-452d-aabd-ab12363dc7eb.png)
 <br>
 
 
