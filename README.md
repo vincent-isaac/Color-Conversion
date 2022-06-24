@@ -1,4 +1,6 @@
-# Color Conversion
+### EX NO : 03
+### DATE  : 12.04.2022
+# <p align="center">Color Conversion</p>
 ## AIM
 To perform the color conversion between RGB, BGR, HSV, and YCbCr color models.
 
@@ -44,8 +46,8 @@ cv2.merge((blue,green,red))
 ```python
 # Developed By:J Vincent isaac jeyaraj
 # Register Number:212220230060
-# i) Convert BGR and RGB to HSV and GRAY
 
+# i) Convert BGR and RGB to HSV and GRAY
 import cv2
 image=cv2.imread('1.jpg')
 hsv_img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -59,10 +61,7 @@ cv2.imshow('BGR2GRAY',gray1_img )
 cv2.waitKey(0)
 cv2.destroyAllWindows
 
-
-
 # ii)Convert HSV to RGB and BGR
-
 import cv2
 image=cv2.imread('1.jpg')
 hsv_img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -74,19 +73,14 @@ cv2.imshow('RGB2GRAY',hsv2_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows
 
-
 # iii)Convert RGB and BGR to YCrCb
-
 RGB_YCrCb=cv2.cvtColor(image,cv2.COLOR_RGB2YCrCb)
 cv2.imshow("RGB_YCrCb_IMAGE",RGB_YCrCb)
 BGR_YCrCb=cv2.cvtColor(image,cv2.COLOR_BGR2YCrCb)
 cv2.imshow("BGR_YCrCb_IMAGE",BGR_YCrCb)
 cv2.waitKey(0)
 
-
-
 # iv)Split and Merge RGB Image
-
 blue = image[:,:,0]
 cv2.imshow("blue",blue)
 green = image[:,:,1]
@@ -97,10 +91,7 @@ merged=cv2.merge((blue,green,red))
 cv2.imshow("merged",merged)
 cv2.waitKey(0)
 
-
-
 # v) Split and merge HSV Image
-
 hsv=cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
 cv2.imshow("ORIGINAL HSV_IMAGE",hsv)
 h, s, v = cv2.split(hsv)
@@ -110,14 +101,18 @@ cv2.imshow('v_plane', v)
 mergedhsv=cv2.merge((h,s,v))
 cv2.imshow('merged',mergedhsv)
 cv2.waitKey(0)
-
-
-
 ```
 ## Output:
 ### i) BGR and RGB to HSV and GRAY
 <br>|
 ![1](https://user-images.githubusercontent.com/75234588/162613522-7a6e2bfb-8708-4f0f-8243-5209ef6aaed2.png)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 
 ### ii) HSV to RGB and BGR
@@ -127,10 +122,13 @@ cv2.waitKey(0)
 ### iii) RGB and BGR to YCrCb
 <br>![3](https://user-images.githubusercontent.com/75234588/162613570-9869ebdf-efd7-4191-a3f2-29c9b424d324.png)
 <br>
+<br>
+<br>
+<br>
+<br>
 
 ### iv) Split and merge RGB Image
 <br>![4](https://user-images.githubusercontent.com/75234588/162613584-8551165d-1e45-49d8-89e4-a19c25ce0f9b.png)
-<br>
 
 ### v) Split and merge HSV Image
 <br>![5](https://user-images.githubusercontent.com/75234588/162613591-47074d04-630b-4d91-9b9f-b041d2b95b86.png)
